@@ -1,0 +1,232 @@
+.Contact-main{
+    padding: 50px 200px;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-title{
+    font-size: 48px;
+    font-weight: 400;
+    color: #171717;
+    line-height: 60px;
+}
+.contact-title span{
+    font-size: 48px;
+    font-weight: 400;
+    color: #FF8E75;
+}
+.contact-detail{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #525252;
+}
+.contact-list{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+.contact-icon1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #DBEAFE;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    color: #4DD0E1;
+}
+.contact-icon2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #F3E8FF;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    color: #E040FB;
+}
+.contact-typetitle{
+    font-size: 14px;
+    font-weight: 400;
+    color: #737373;
+}
+.contact-typedetail{
+    font-size: 16px;
+    font-weight: 400;
+    color: #171717;
+}
+.frequentlytitle{
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #171717;
+    margin-bottom: 16px;
+}
+.frequentlybox{
+    border-radius: 16px;
+    border: 1px solid #E5E5E5;
+    padding: 17px;
+    margin-bottom: 16px;
+}
+.freqqn{
+    font-size: 14px;
+    font-weight: 400;
+    color: #171717;
+    margin-bottom: 10px;
+}
+.freqans{
+    font-size: 14px;
+    font-weight: 400;
+    color: #525252;
+}
+.contact-left{
+    flex: 1;
+    font-size: 24px;
+    font-weight: 400;
+    color: #171717;
+}
+label{
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 12px;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+}
+form input::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: #A1A1A1;
+}
+form textarea{
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 12px;
+    border: 1px solid #E5E5E5;
+    background-color: #FAFAFA;
+    resize: none;
+}
+form textarea::placeholder{
+    font-size: 14px;
+    font-weight: 400;
+    color: #A1A1A1;
+}
+.form-container{
+    width: 490px;
+    height: 490px;
+    padding: 33px;
+    background-color: white;
+    box-shadow: 0 4px 6px #0000001A, 0px 10px 15px  #0000001A;
+    border-radius: 24px;
+}
+form button{
+    margin-top: 24px;
+    padding:14px;
+    background-color: #171717;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+}
+
+@media (max-width:500px) {
+.Contact-main{
+    padding: 30px 30px;
+    display: block;
+}
+.contact-title{
+    font-size: 25px;
+    line-height: 30px;
+}
+.contact-title span{
+    font-size: 25px;
+}
+.contact-detail{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.contact-list{
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.contact-icon1{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.contact-icon2{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.contact-typetitle{
+    font-size: 12px;
+}
+.contact-typedetail{
+    font-size: 14px;
+}
+.frequentlytitle{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.frequentlybox{
+    padding: 15px;
+    margin-bottom: 16px;
+}
+.freqqn{
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.freqans{
+    font-size: 12px;
+}
+.contact-left{
+    font-size: 20px;
+}
+label{
+    margin-top: 16px;
+    font-size: 14px;
+}
+form input{
+    margin-top: 8px;
+    padding: 12px;
+}
+form input::placeholder{
+    font-size: 12px;
+}
+form textarea{
+    margin-top: 8px;
+    padding: 12px;
+}
+form textarea::placeholder{
+    font-size: 12px;
+}
+.form-container{
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+form button{
+    margin-top: 24px;
+    padding:14px;
+    font-size: 13px;
+}
+}

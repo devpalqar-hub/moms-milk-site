@@ -1,0 +1,148 @@
+.hero-main{
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.hero-subhead-icon{
+    height: 16px;
+    width: 16px;
+    color: #525252;
+}
+.hero-subhead{
+    gap: 10px;
+    padding: 9px 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16777200px;
+    background: #1717170D;
+    border: 1px solid #1717171A;
+    font-size: 12px;
+    font-weight: 500;
+    color: #404040;
+    margin-bottom: 24px;
+}
+.hero-title{
+    text-align: center;
+    font-size: 52px;
+    font-weight: 600;
+    color:#373737;
+    margin-bottom: 10px;
+}
+.hero-detail{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #373737;
+    margin-bottom: 24px;
+}
+.download-badges{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.download-bdg{
+    width: 175px;
+    height: 46px;
+    gap: 3px;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    background: #1E1E1E;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 1677720px;
+    box-shadow: 0 25px 20px -15px  #00000029;
+}
+.download-icon{
+    height: 20px;
+    width: 20px;
+}
+.hero-main p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #373737;
+}
+.hero-main img{
+    width: 480px;
+    height: 800px;
+}
+.mobilemock-design{
+    position: relative;
+}
+.liveicon{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #00BC7D;
+    animation: liveGlow 2s infinite ease-in-out;
+}
+.livetext p{
+    font-size: 10px;
+    font-weight: 400;
+    color: #737373;
+}
+.livetext h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #171717;
+}
+.livetext p{
+    font-size: 10px;
+    font-weight: 400;
+    color: #737373;
+}
+.livetext h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #171717;
+}
+.livecard{
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 12px;
+    background: #FFFFFFF2;
+    border-radius: 16px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 8px 10px  #0000001A,0 20px 25px  #0000001A;
+    animation: float 4s infinite ease-in-out;
+}
+.savecard{
+    position: absolute;
+    bottom: 40%;
+    right: 7%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 12px;
+    background: #FFFFFFF2;
+    border-radius: 16px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 8px 10px  #0000001A,0 20px 25px  #0000001A;
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes liveGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0, 188, 125, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 12px 4px rgba(0, 255, 180, 0.4);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

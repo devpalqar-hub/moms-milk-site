@@ -1,0 +1,157 @@
+.feature-main{
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.feature-subhead-icon{
+    height: 16px;
+    width: 16px;
+    color: #525252;
+}
+.feature-subhead{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1717170D;
+    border: 1px solid #1717171A;
+    border-radius: 16777200px;
+    color: #404040;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 10px;
+    padding: 9px 17px;
+    margin-bottom: 25px;
+}
+.feature-title{
+    text-align: center;
+    font-size: 52px;
+    font-weight: 600;
+    color: #373737;
+    margin-bottom: 20px;
+}
+.feature-detail{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color:#373737;
+    margin-bottom: 30px;
+}
+
+.featurecard-gridA{
+    display:grid;
+    grid-template:1fr 1fr/1fr 1fr 1fr ;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.featurecard{
+    height: 222px;
+    padding: 32px 52px 32px 32px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+}
+.featurecard-title{
+    font-size: 20px;
+    font-weight: 400;
+    color: #171717;
+    margin-bottom: 12px;
+}
+.featurecard p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #525252;
+    line-height: 24px;
+}
+
+.featurecard-gridB{
+    display:grid;
+    grid-template:1fr/1fr 1fr 1fr ;
+    gap: 25px;
+}
+.fcard{
+    height: 175px;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #FAFAFA;
+    border: 1px solid #F5F5F5;
+}
+.fcard-title{
+    font-size: 16px;
+    font-weight: 400;
+    color: #171717;
+    margin-bottom: 8px;
+}
+.fcard p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #525252;
+}
+.fcard-icon{
+    background-color: #171717;
+    color: white;
+    padding: 10px;
+    border-radius: 16px;
+    height: 40px;
+    width: 40px;
+    margin-bottom: 16px;
+}
+
+.baby-icon{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #FF9B8510;
+    border-radius: 16px;
+    color: #FF9B85;
+    margin-bottom: 24px;
+}
+.pulse-icon{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #4DD0E110;
+    border-radius: 16px;
+    color: #4DD0E1;
+    margin-bottom: 24px;
+}
+.moon-icon{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #E040FB10;
+    border-radius: 16px;
+    color: #E040FB;
+    margin-bottom: 24px;
+}
+.chart-icon{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #FFD54F10;
+    border-radius: 16px;
+    color: #FFD54F;
+    margin-bottom: 24px;
+}
+.heart-icon{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #81C78410;
+    border-radius: 16px;
+    color: #81C784;
+    margin-bottom: 24px;
+}
+.location-icon{
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    background-color: #FF9B8510;
+    border-radius: 16px;
+    color: #FF9B85;
+    margin-bottom: 24px;
+}

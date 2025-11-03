@@ -1,0 +1,36 @@
+header{
+    padding: 68px 180px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+    height: 28px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #525252;
+}
+.download-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius:16777200px ;
+    background-color:#F69173;
+    padding: 10px 14px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 6px 2px 16px #88A5BF7A, -6px -2px 16px #FFFFFFCC;
+}
+.download-button img{
+    width: 16px;
+}

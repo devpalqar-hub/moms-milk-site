@@ -1,0 +1,145 @@
+footer{
+    background: #171717;
+    padding: 64px 90px 200px 90px;
+}
+.footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 155px;
+}
+.sec1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 17px;
+}
+.sec2{
+    flex: 1;
+}
+.sec3{
+    flex: 1;
+}
+.sec4{
+    flex: 1;
+}
+footer img{
+    width: 150px;
+    height: 28px;
+}
+.sec1 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #A1A1A1;
+    line-height: 24px;
+}
+.socialicon-list{
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+}
+.socialicon-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    height: 36px;
+    width: 36px;
+    background: #262626;
+}
+.socialicon{
+    color: #D4D4D4;
+    height: 20px;
+    width: 20px;
+}
+.quicklink-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+footer ul{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #A1A1A1;
+    line-height: 35px;
+}
+.footer-bottom{
+    margin-top: 48px;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #262626;
+}
+.footer-bottom p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #737373;
+}
+.footer-bottom span{
+    color: #FF9B85;
+}
+.footer-top ul li a:hover{
+    cursor: pointer;
+    color: #FF9B85;
+}
+
+@media (max-width:500px) {
+    footer{
+    padding:40px 30px;
+}
+.footer-top{
+    gap: 30px;
+}
+.sec1{
+    flex: 1;
+    gap: 17px;
+}
+.sec2{
+    flex: 1;
+}
+.sec3{
+    flex: 1;
+}
+.sec4{
+    flex: 1;
+}
+footer img{
+    width: 120px;
+    height: 28px;
+}
+.sec1 p{
+    font-size: 14px;
+    line-height: 24px;
+}
+.socialicon-list{
+    margin-top: 16px;
+    gap: 12px;
+}
+.socialicon-box{
+    height: 36px;
+    width: 36px;
+}
+.socialicon{
+    height: 20px;
+    width: 20px;
+}
+.quicklink-title{
+    font-size: 14px;
+}
+footer ul{
+    font-size: 13px;
+}
+.footer-bottom{
+    margin-top: 25px;
+    padding: 16px 0;
+    display: flex;
+}
+.footer-bottom p{
+    font-size: 10px;
+    color: #737373;
+}    
+}
