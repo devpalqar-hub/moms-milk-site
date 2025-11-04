@@ -39,10 +39,14 @@ export default function Analytics() {
                 </div>
               </div>
           </div>
-          <img src="./Analyticmobilemock.png" alt="" />
+          <div className="analytics-right">
+            <img src="./Analyticmobilemock.png" alt="" />
+          </div>
       </div>
       <div className="timeline-section">
-        <img src="./Analyticmobilemock.png" alt="" />
+        <div className="timeline-left">
+          <img src="./Analyticmobilemock.png" alt="" />
+        </div>
         <div className="timeline-right">
               <div className="analytics-subhead">
                 <LuClock4/>

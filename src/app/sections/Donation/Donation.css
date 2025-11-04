@@ -180,7 +180,7 @@
     gap: 32px;
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
 
 
 .Donation-main{
@@ -202,6 +202,7 @@
     height: 250px;
 }
 .donation-badge{
+    text-align: center;
     position: absolute;
     bottom: -2%;
     right: -8%;
@@ -237,22 +238,21 @@
 }
 .donation-locationicon{
     border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    padding: 12px;
+    height: 35px;
+    width: 35px;
+    padding: 7px;
 }
 .donation-shieldicon{
     border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    padding: 12px;
-    color: #E040FB;
+    height: 35px;
+    width: 35px;
+    padding: 7px;
 }
 .donation-teamicon{
     border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    padding: 12px;
+    height: 35px;
+    width: 35px;
+    padding: 7px;
 }
 .donation-infotitle{
     font-size: 15px;

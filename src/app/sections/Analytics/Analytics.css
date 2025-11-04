@@ -9,9 +9,17 @@
     justify-content: space-between;
     gap: 350px;
 }
-.analytics-main img{
+.analytics-right img{
+    border-radius: 20px;
     height: 600px;
     width: 275px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+}
+.timeline-left img{
+    border-radius: 20px;
+    height: 600px;
+    width: 275px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
 }
 .timeline-section{
     display: flex;
@@ -122,6 +130,10 @@
     border: 1px solid #E5E5E5;
     padding: 25px;
     background-color: #FAFAFA;
+    transition: 0.3s ease-in-out;
+}
+.analytics-bottombox:hover{
+    transform: scale(1.04);
 }
 .analytics-bottomicon{
     font-size: 30px;
@@ -141,4 +153,105 @@
     color: #525252;
     line-height: 20px;
     margin-bottom: 8px;
+}
+
+@media (max-width:600px) {
+    .analytics-main{
+    padding: 30px 30px;
+    gap: 30px;
+}
+.analytics-section{
+    flex-direction: column;
+    gap: 30px;
+}
+.analytics-right img{
+    height: 300px;
+    width: 150px;
+}
+.timeline-left img{
+    display: none;
+}
+.timeline-section{
+    gap: 0px;
+}
+.analytics-subhead{
+    gap: 10px;
+    padding: 8px 12px;
+    font-size: 10px;
+    margin-bottom: 22px;
+}
+.analytics-subhead-icon{
+    color: #525252;
+}
+.analytics-title{
+    font-size: 26px;
+    line-height: 1;
+    margin-bottom: 22px;
+}
+.analytics-title span{
+    color: #A1A1A1;
+}
+.anlytics-detail{
+    font-size: 14px;
+    margin-bottom: 22px;
+    line-height: 20px;
+}
+.analytics-list{
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.analytics-listicon{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}
+.analytics-listtitle{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.analytics-listdetail{
+    font-size: 12px;
+    line-height: 20px;
+}
+.timeline-container{
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 12px;
+}
+.timeline-containertitle{
+    font-size: 14px;
+    line-height: 20px;
+}
+.timeline-containerdetail{
+    font-size: 12px;
+    line-height: 20px;
+}
+.timeline-containericon{
+    font-size: 18px;
+}
+.analytics-bottomrow{
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+.analytics-bottombox{
+    height: 150px;
+    padding: 15px;
+}
+.analytics-bottomicon{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.analytics-bottomtitle{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.analytics-bottomdetail{
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
 }

@@ -31,6 +31,7 @@
     margin-bottom: 10px;
 }
 .hero-detail{
+    width: 500px;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -41,6 +42,9 @@
     display: flex;
     gap: 10px;
     margin-bottom: 16px;
+}
+.download-badges:hover{
+    cursor: pointer;
 }
 .download-bdg{
     width: 175px;
@@ -88,11 +92,6 @@
     font-size: 18px;
     font-weight: 600;
     color: #171717;
-}
-.livetext p{
-    font-size: 10px;
-    font-weight: 400;
-    color: #737373;
 }
 .livetext h6{
     font-size: 18px;
@@ -145,4 +144,76 @@
   50% {
     transform: translateY(-8px);
   }
+}
+
+@media (max-width:600px) {
+    
+
+.hero-main{
+    padding: 30px 30px;   
+}
+.hero-subhead-icon{
+    height: 14px;
+    width: 14px;
+}
+.hero-subhead{
+    gap: 10px;
+    padding: 8px 15px;
+    font-size: 10px;
+    margin-bottom: 18px;
+}
+.hero-title{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.hero-detail{
+    width: auto;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.download-badges{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+.download-bdg{
+    width: 120px;
+    height: 40px;
+    gap: 3px;
+    font-size: 13px;
+}
+.download-icon{
+    height: 15px;
+    width: 15px;
+}
+.hero-main p{
+    font-size: 14px;
+}
+.hero-main img{
+    width: 220px;
+    height: 340px;
+}
+.mobilemock-design{
+    position: relative;
+}
+.liveicon{
+    width: 7px;
+    height: 7px;
+}
+.livetext p{
+    font-size: 8px;
+}
+.livetext h6{
+    font-size: 12px;
+}
+.livecard{
+    border-radius: 12px;
+    gap: 8px;
+    padding: 8px 8px;
+}
+.savecard{
+    border-radius: 12px;
+    gap: 8px;
+    padding: 10px 10px;
+}
 }

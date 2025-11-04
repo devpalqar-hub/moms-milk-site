@@ -14,7 +14,7 @@ export default function Hero() {
             Care Made Simple <br /> for New Moms
         </div>
         <div className="hero-detail">
-            Moms Milk helps you track your baby's feeding, sleep, and diaper <br /> routines and connect with trusted milk donors nearby.
+            Moms Milk helps you track your baby's feeding, sleep, and diaper  routines and connect with trusted milk donors nearby.
         </div>
         <div className="download-badges">
             <a href="">

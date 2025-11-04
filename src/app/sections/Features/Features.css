@@ -46,11 +46,14 @@
     margin-bottom: 25px;
 }
 .featurecard{
-    height: 222px;
     padding: 32px 52px 32px 32px;
     border-radius: 24px;
     background-color: #FFFFFF;
     border: 1px solid #E5E5E5;
+    transition: 0.2s ease-in-out;
+}
+.featurecard:hover{
+    transform: translateY(-4%);
 }
 .featurecard-title{
     font-size: 20px;
@@ -71,7 +74,6 @@
     gap: 25px;
 }
 .fcard{
-    height: 175px;
     padding: 30px 50px;
     display: flex;
     flex-direction: column;
@@ -79,6 +81,7 @@
     border-radius: 16px;
     background-color: #FAFAFA;
     border: 1px solid #F5F5F5;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
 .fcard-title{
     font-size: 16px;
@@ -154,4 +157,130 @@
     border-radius: 16px;
     color: #FF9B85;
     margin-bottom: 24px;
+}
+
+@media (max-width:600px) {
+    
+
+.feature-main{
+    padding: 30px 30px;
+}
+.feature-subhead-icon{
+    height: 14px;
+    width: 14px;
+}
+.feature-subhead{
+    font-size: 10px;
+    gap: 10px;
+    padding: 8px 15px;
+    margin-bottom: 18px;
+}
+.feature-title{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.feature-detail{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.featurecard-gridA{
+    display:grid;
+    grid-template:1fr 1fr 1fr/ 1fr 1fr ;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+.featurecard{
+    height: auto;
+    padding: 15px;
+}
+.featurecard-title{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.featurecard p{
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.featurecard-gridB{
+    display:grid;
+    grid-template:1fr/1fr 1fr 1fr ;
+    gap: 25px;
+}
+.fcard{
+    height: auto;
+    padding: 10px 10px;
+}
+.fcard-title{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.fcard p{
+    text-align: center;
+    font-size: 10px;
+}
+.fcard-icon{
+    padding: 5px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 6px;
+}
+
+.baby-icon{
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    background-color: #FF9B8510;
+    border-radius: 16px;
+    color: #FF9B85;
+    margin-bottom: 10px;
+}
+.pulse-icon{
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    background-color: #4DD0E110;
+    border-radius: 16px;
+    color: #4DD0E1;
+    margin-bottom: 10px;
+}
+.moon-icon{
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    background-color: #E040FB10;
+    border-radius: 16px;
+    color: #E040FB;
+    margin-bottom: 10px;
+}
+.chart-icon{
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    background-color: #FFD54F10;
+    border-radius: 16px;
+    color: #FFD54F;
+    margin-bottom: 10px;
+}
+.heart-icon{
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    background-color: #81C78410;
+    border-radius: 16px;
+    color: #81C784;
+    margin-bottom: 10px;
+}
+.location-icon{
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+    background-color: #FF9B8510;
+    border-radius: 16px;
+    color: #FF9B85;
+    margin-bottom: 10px;
+}
 }
