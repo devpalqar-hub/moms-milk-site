@@ -47,7 +47,7 @@ export default function () {
                 <div className="sec4">
                     <p className='quicklink-title'>Support</p>
                     <ul>
-                        <li><a >Contact Us</a></li>
+                        <li><a href='#contact'>Contact Us</a></li>
                         <li><a >Help Center</a></li>
                         <li><a href='/privacy' target='_blank' rel='noopener noreferrer'>Privacy Policy</a></li>
                         <li><a href='/terms' target='_blank' rel='noopener noreferrer'>Terms of Services</a></li>

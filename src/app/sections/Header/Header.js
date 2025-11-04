@@ -9,10 +9,10 @@ export default function Header() {
         <nav>
             <img src="./Logo.svg" alt="" />
             <ul className={menuOpen?"open":""}>
-              <li><a href="">Features</a></li>
-              <li><a href="">App</a></li>
-              <li><a href="">Donation</a></li>
-              <li><a href="">Stories</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a>App</a></li>
+              <li><a href="#donation">Donation</a></li>
+              <li><a href="#review">Stories</a></li>
             </ul>
             <div className="header-right">
               <div className="download-button">

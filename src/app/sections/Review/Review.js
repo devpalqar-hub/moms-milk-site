@@ -40,13 +40,13 @@ export default function Review() {
                     <HiStar/>
                 </div>
                 <div className="reviewcomment">
-                    "This app has been a lifesaver! Tracking my baby's feeding schedule has never been easier. The analytics help me understand my baby's patterns."
+                    "I love being able to help other mothers through the milk donation feature. The matching system is safe and convenient."
                 </div>
                 <div className="reviewer">
-                    <img src="./Sarah Johnson.png" alt="" />
+                    <img src="./Emily Rodriguez.png" alt="" />
                     <div className="reviewerdetail">
-                        <p className="reviewername">Sarah Johnson</p>
-                        <p className="reviwerpos">New Mom</p>
+                        <p className="reviewername">Emily Rodriguez</p>
+                        <p className="reviwerpos">Milk Donor</p>
                     </div>
                 </div>
             </div>
@@ -59,13 +59,13 @@ export default function Review() {
                     <HiStar/>
                 </div>
                 <div className="reviewcomment">
-                    "This app has been a lifesaver! Tracking my baby's feeding schedule has never been easier. The analytics help me understand my baby's patterns."
+                   "Perfect for tracking everything in one place. The sleep tracking feature especially helps me understand my baby's sleep patterns."
                 </div>
                 <div className="reviewer">
-                    <img src="./Sarah Johnson.png" alt="" />
+                    <img src="./Jessica Chen.png" alt="" />
                     <div className="reviewerdetail">
-                        <p className="reviewername">Sarah Johnson</p>
-                        <p className="reviwerpos">New Mom</p>
+                        <p className="reviewername">Jessica Chen</p>
+                        <p className="reviwerpos">Working Mom</p>
                     </div>
                 </div>
             </div>
