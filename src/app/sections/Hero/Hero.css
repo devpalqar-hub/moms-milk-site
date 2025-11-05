@@ -146,11 +146,11 @@
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     
 
 .hero-main{
-    padding: 30px 30px;   
+    padding: 10px 30px;   
 }
 .hero-subhead-icon{
     height: 14px;
@@ -191,7 +191,7 @@
 }
 .hero-main img{
     width: 220px;
-    height: 340px;
+    height: 360px;
 }
 .mobilemock-design{
     position: relative;
@@ -215,5 +215,49 @@
     border-radius: 12px;
     gap: 8px;
     padding: 10px 10px;
+}
+}
+
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+.hero-main{
+    padding: 40px 100px;   
+}
+.hero-title{
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+.hero-detail{
+    width: 400px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.download-bdg{
+    width: 150px;
+    height: 42px;
+    font-size: 14px;
+}
+.hero-main img{
+    width: 360px;
+    height: 620px;
+}
+.livecard{
+    top: 26%;
+    left: 10%;
+    padding: 10px 10px;
+    gap: 8px;
+}
+.savecard{
+    bottom: 42%;
+    right: 10%;
+    padding: 10px 10px;
+    gap: 8px;
+}
+.livetext h6{
+    font-size: 14px;
+}
+.livetext p{
+    font-size: 9px;
 }
 }

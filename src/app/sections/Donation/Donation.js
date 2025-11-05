@@ -3,6 +3,7 @@ import { GrLocation } from "react-icons/gr";
 import { LuShield } from "react-icons/lu";
 import { AiOutlineTeam } from "react-icons/ai";
 import './Donation.css'
+import DonationCounter from './donationcounter';
 
 export default function Donation() {
   return (
@@ -11,7 +12,7 @@ export default function Donation() {
             <div className="donation-img">
             <img src="./Mother.png" alt="" />
             <div className="donation-badge">
-                <p><span>1000+</span> <br />Donations</p>
+                <p><DonationCounter target={1000} duration={1500} /> <br />Donations</p>
             </div>
         </div>
         <div className="donation-right">

@@ -7,7 +7,7 @@
 .analytics-section{
     display: flex;
     justify-content: space-between;
-    gap: 350px;
+    gap: 300px;
 }
 .analytics-right img{
     border-radius: 20px;
@@ -24,7 +24,7 @@
 .timeline-section{
     display: flex;
     justify-content:space-between;
-    gap: 350px;
+    gap: 300px;
 }
 .analytics-subhead{
     display: inline-flex;
@@ -155,13 +155,15 @@
     margin-bottom: 8px;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
     .analytics-main{
     padding: 30px 30px;
     gap: 30px;
 }
 .analytics-section{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 .analytics-right img{
@@ -254,4 +256,102 @@
     margin-bottom: 8px;
 }
 
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+.analytics-main{
+  padding: 40px 100px;
+  gap: 70px;
+}
+
+.analytics-section,
+.timeline-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.analytics-right img {
+  height: 450px;
+  width: 220px;
+}
+.timeline-left img{
+    display: none;
+}
+
+.analytics-subhead {
+  padding: 9px 14px;
+  font-size: 12px;
+  margin-bottom: 26px;
+}
+
+.analytics-title {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.anlytics-detail {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.analytics-listicon {
+  width: 36px;
+  height: 36px;
+  padding: 8px;
+}
+
+.analytics-listtitle {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.analytics-listdetail {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.timeline-container {
+  padding: 15px;
+  margin-bottom: 15px;
+  gap: 18px;
+}
+
+.timeline-containertitle {
+  font-size: 15px;
+}
+
+.timeline-containerdetail {
+  font-size: 13px;
+}
+
+.timeline-containericon {
+  font-size: 20px;
+}
+
+.analytics-bottomrow {
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 20px;
+}
+
+.analytics-bottombox {
+  height: 150px;
+  padding: 20px;
+}
+
+.analytics-bottomicon {
+  font-size: 24px;
+}
+
+.analytics-bottomtitle {
+  font-size: 15px;
+}
+
+.analytics-bottomdetail {
+  font-size: 13px;
+  line-height: 20px;
+}
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { LuMail } from "react-icons/lu";
 import { MdChatBubbleOutline } from "react-icons/md";
+import { FaPaperPlane } from "react-icons/fa";
 import './Contact.css'
 
 export default function Contact() {
@@ -49,7 +50,7 @@ export default function Contact() {
                     <input placeholder='your.email@exapmle.com' type="email" />
                     <label> Message</label>
                     <textarea placeholder='How can we help you?' type="text" rows={3}></textarea>
-                    <button type='submit'>Send Message</button>
+                    <button type='submit'><FaPaperPlane/> Send Message</button>
                 </form>
                 </div>
         </div>

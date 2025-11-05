@@ -39,6 +39,9 @@ nav ul li a:hover{
     font-weight: 500;
     box-shadow: 6px 2px 16px #88A5BF7A, -6px -2px 16px #FFFFFFCC;
 }
+.download-button:hover{
+    cursor: pointer;
+}
 .download-button img{
     width: 16px;
 }
@@ -56,7 +59,7 @@ nav .menu  span{
     border: 2px solid black;
     transition: 0.4s;
 }
-@media (max-width:600px) {
+@media (max-width:700px) {
     
     header{
     padding: 30px 30px;
@@ -71,15 +74,14 @@ nav img{
     height: 28px;
 }
 nav ul{
+    display: none;
     position: absolute;
     top: -30px;
-    right: -100vw;
-    width: 70vw;
-    max-width: 320px;
+    width: 60vw;
     height: 100vh;
     background: #fff;
     margin: 0;
-    padding: 100px 22px 28px 22px;
+    padding: 80px 22px 28px 22px;
     flex-direction: column;
     gap: 26px;
     align-items: flex-start;
@@ -111,4 +113,31 @@ nav ul.open{
     gap: 12px;
 }
 
+}
+@media (min-width: 701px) and (max-width: 1024px) {
+
+header {
+  padding: 25px 80px;
+}
+nav img {
+  width: 130px;
+  height: 26px;
+}
+nav ul {
+  gap: 20px;
+  font-size: 14px;
+}
+.download-button {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.download-button img {
+  width: 14px;
+}
+.header-right {
+  gap: 18px;
+}
+nav .menu {
+  display: none; 
+}
 }

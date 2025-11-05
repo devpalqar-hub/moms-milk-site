@@ -180,11 +180,11 @@
     gap: 32px;
 }
 
-@media (max-width:600px) {
+@media (max-width:700px) {
 
 
 .Donation-main{
-    padding: 30px 30px;
+    padding: 10px 30px;
 }
 .donation-top{
     display: flex;
@@ -261,7 +261,7 @@
     line-height: 20px;
 }
 .donation-infodetail{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #525252;
     line-height: 16px;
@@ -279,6 +279,7 @@
 }
 .donation-howbox{
     height: 200px;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -317,5 +318,123 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+}
+
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+.Donation-main {
+  padding: 40px 100px;
+}
+
+.donation-top {
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.donation-img {
+  width: 380px;
+  height: 380px;
+}
+
+.donation-img img {
+  width: 380px;
+  height: 380px;
+}
+
+.donation-badge {
+  height: 110px;
+  width: 180px;
+  padding: 25px;
+  right: -6%;
+  bottom: -3%;
+}
+
+.donation-badge span {
+  font-size: 36px;
+}
+
+.donation-badge p {
+  font-size: 14px;
+}
+
+.donation-title {
+  font-size: 38px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.donation-title span {
+  font-size: 38px;
+}
+
+.donation-detail {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.donation-list {
+  gap: 14px;
+  justify-content: center;
+}
+
+.donation-locationicon,
+.donation-shieldicon,
+.donation-teamicon {
+  height: 42px;
+  width: 42px;
+  padding: 9px;
+}
+
+.donation-infotitle {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.donation-infodetail {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.donation-bottom {
+  margin-top: 60px;
+}
+
+.donation-bottomtitle {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.donation-bottomrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.donation-howbox {
+  height: 220px;
+  padding: 25px;
+}
+
+.numberingcircle1,
+.numberingcircle2,
+.numberingcircle3 {
+  width: 56px;
+  height: 56px;
+  font-size: 22px;
+}
+
+.howtitle {
+  font-size: 18px;
+}
+
+.donation-howbox p {
+  font-size: 14px;
+  line-height: 20px;
 }
 }
