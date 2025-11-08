@@ -1,0 +1,75 @@
+.socialicon-list{
+    margin-top: 16px;
+    display: flex;
+    gap: 12px;
+}
+.socialicon-box{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    height: 36px;
+    width: 36px;
+    background: #262626;
+    transform: 0.3s ease;
+}
+.socialicon{
+    position: relative;
+    z-index: 1;
+    color: #D4D4D4;
+    height: 20px;
+    width: 20px;
+    transition: color 0.4s ease;
+}
+.socialicon-box::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FF9B85;
+  transition: bottom 0.4s ease;
+  z-index: 0;
+}
+.socialicon-box:hover::before {
+  bottom: 0;
+}
+.socialicon-box:hover {
+    cursor: pointer;
+  transform: translateY(-4px);
+}
+.socialicon-box:hover .socialicon {
+  color: #171717;
+}
+
+
+@media (max-width:700px) {
+
+.socialicon-list{
+    margin-top: 16px;
+    gap: 12px;
+}
+.socialicon-box{
+    height: 36px;
+    width: 36px;
+}
+.socialicon{
+    height: 20px;
+    width: 20px;
+}
+}
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+.socialicon-box {
+    width: 34px;
+    height: 34px;
+}
+.socialicon {
+    width: 18px;
+    height: 18px;
+}
+}

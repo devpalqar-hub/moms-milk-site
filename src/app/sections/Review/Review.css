@@ -88,7 +88,7 @@
     
 
 .Review-main{
-    padding: 10px 30px;
+    padding: 15px 30px;
 }
 .reviewtitle{
     font-size: 25px;
@@ -135,9 +135,11 @@
     font-size: 12px;
 }
 .reviewbottomrow{
+    width: 100%;
     align-items: start;
-    gap: 16px;
-    margin-top: 30px;
+    gap: 30px;
+    margin-top: 45px;
+    margin-bottom: 20px;
 }
 .reviewbottomrow h3{
     font-size: 20px;

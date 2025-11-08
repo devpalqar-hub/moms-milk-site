@@ -1,6 +1,7 @@
 "use client"
 import React,{useState} from 'react'
 import './Header.css'
+import Socialicons from '@/app/components/Socialicons/Socialicons'
 
 export default function Header() {
   const[menuOpen,setmenuOpen]= useState(false)
@@ -9,10 +10,11 @@ export default function Header() {
         <nav>
             <img src="./Logo.svg" alt="" />
             <ul className={menuOpen?"open":""}>
-              <li><a href="#features">Features</a></li>
+              <li><a href="#features" onClick={() => setmenuOpen(false)}>Features</a></li>
               <li><a>App</a></li>
-              <li><a href="#donation">Donation</a></li>
-              <li><a href="#review">Stories</a></li>
+              <li><a href="#donation" onClick={() => setmenuOpen(false)}>Donation</a></li>
+              <li><a href="#review" onClick={() => setmenuOpen(false)}>Stories</a></li>
+              <div className="social-header">Follow Us:<Socialicons/></div>
             </ul>
             <div className="header-right">
               <div className="download-button">
