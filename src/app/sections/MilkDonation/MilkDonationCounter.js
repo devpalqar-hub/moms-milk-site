@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from "react";
 
-export default function DonationCounter({ target = 1000, duration = 2000 }) {
+export default function MilkDonationCounter({ target = 1000, duration = 2000 }) {
   const [count, setCount] = useState(0);
   const ref = useRef();
   const hasAnimated = useRef(false);

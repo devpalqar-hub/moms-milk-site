@@ -2,17 +2,17 @@ import React from 'react'
 import { GrLocation } from "react-icons/gr";
 import { LuShield } from "react-icons/lu";
 import { AiOutlineTeam } from "react-icons/ai";
-import './Donation.css'
-import DonationCounter from './donationcounter';
+import './MilkDonation.css'
+import MilkDonationCounter from './MilkDonationCounter';
 
-export default function Donation() {
+export default function MilkDonation() {
   return (
-    <div className='Donation-main' id='donation'>
+    <div className='Donation-main' id='milkdonation'>
         <div className="donation-top">
             <div className="donation-img">
             <img src="./Mother.png" alt="" />
             <div className="donation-badge">
-                <p><DonationCounter target={1000} duration={1500} /> <br />Donations</p>
+                <p><MilkDonationCounter target={1000} duration={1500} /> <br />Donations</p>
             </div>
         </div>
         <div className="donation-right">

@@ -1,62 +1,126 @@
-import React from 'react'
+import React from "react";
 import "./page.css";
+
 export const metadata = {
-    title: "Mess Meals/Terms and Conditions"
-}
+  title: "Mom's Milk - Terms & Conditions",
+};
 
-export default function page() {
+export default function Page() {
   return (
-<section className='terms-container'>
-  <h1>Terms and Conditions</h1>
-  <p className='last-updated'>Last Updated: October 31, 2025</p>
+    <section className="terms-container">
+      <h1 className="terms-title">
+        Terms & Conditions – <img src="/Logo.svg" alt="" className="logo" />
+      </h1>
 
-  <h2>1. Account Registration and Use</h2>
-  <p><strong>Account Creation:</strong> To use Mess Meals, you must provide accurate information during registration (name, email/phone, password). You agree to keep your login credentials secure and updated.</p>
-  <p><strong>Eligibility:</strong> By registering, you confirm you are at least 18 years old and eligible to agree to these terms.</p>
+      <p className="last-updated">Last Updated: October 31, 2025</p>
 
-  <h2>2. Mess Meals Services</h2>
-  <p><strong>Service Overview:</strong> Mess Meals offers tools for managing meal plans, customer subscriptions, orders, delivery tracking, analytics, and payment management for mess owners and customers.</p>
-  <p><strong>Delivery Personnel:</strong> Delivery management is provided as part of the app. Mess Meals is not responsible for delays or incompletion by third-party or independent delivery services.</p>
-  <p><strong>Feature Changes:</strong> Features are subject to updates and improvements; some features may be added or discontinued over time.</p>
+      <p>
+        Welcome to Mom’s Milk (“we”, “our”, “the App”). By using the application,
+        you agree to the following Terms & Conditions. If you do not agree,
+        please stop using the App.
+      </p>
 
-  <h2>3. Orders, Payments, and Refunds</h2>
-  <p><strong>Pricing:</strong> Subscription and order pricing is listed in the app and may change. All fees are disclosed during checkout.</p>
-  <p><strong>Payments:</strong> Payments are processed using secure gateways. You agree to pay all applicable charges for chosen plans or orders.</p>
-  <p><strong>Refunds:</strong> Refunds follow the cancellation policy specified within the app. No refund is provided for completed meals or services already rendered.</p>
+      <h2>1. Use of the Application</h2>
+      <ul>
+        <li>
+          The App helps mothers track diaper logs, sleep logs, feeding logs,
+          breastfeeding sessions, pumping, and baby wellness activities.
+        </li>
+        <li>
+          The App also includes features to connect breast milk donors and
+          requesters.
+        </li>
+        <li>The App is intended for personal and caregiving purposes only.</li>
+      </ul>
 
-  <h2>4. User Responsibilities</h2>
-  <p>By using Mess Meals, you agree to:</p>
-  <ul>
-    <li> Provide accurate mess location and customer information</li>
-    <li> Keep contact and payment details up to date</li>
-    <li> Promptly handle any customer or delivery queries</li>
-    <li> Not misuse, copy, or resell Mess Meals services or data</li>
-    <li> Respect other users and avoid fraudulent behavior</li>
-  </ul>
+      <h2>2. Medical Disclaimer</h2>
+      <ul>
+        <li>Mom’s Milk does not provide medical, diagnostic, or professional healthcare advice.</li>
+        <li>All logs and suggestions are informational only.</li>
+        <li>Always consult a pediatrician or healthcare expert for concerns.</li>
+        <li>The donor/requester feature must be used responsibly.</li>
+      </ul>
 
-  <h2>5. Intellectual Property</h2>
-  <p>All Mess Meals branding, features, and original content are the property of Mess Meals and its licensors. Unauthorized use or duplication is prohibited.</p>
+      <h2>3. Account & Registration</h2>
+      <ul>
+        <li>Some features may require creating an account.</li>
+        <li>You agree to provide accurate and updated information.</li>
+        <li>You are responsible for protecting your login credentials.</li>
+      </ul>
 
-  <h2>6. Service Availability and Disclaimer</h2>
-  <p>Mess Meals is provided “as is.” We make no guarantees about uninterrupted service or error-free performance. Feature availability may depend on network or third-party providers.</p>
+      <h2>4. User Data & Privacy</h2>
+      <ul>
+        <li>
+          You may enter personal and baby-related logs such as sleep, diaper,
+          feeding, breastfeeding, and health updates.
+        </li>
+        <li>
+          Data is protected under strict privacy practices and not shared without
+          consent (unless required by law).
+        </li>
+        <li>
+          Limited donor/requester data may be shared to enable communication.
+        </li>
+        <li>See our Privacy terms for full details.</li>
+      </ul>
 
-  <h2>7. Limitation of Liability</h2>
-  <p>Mess Meals is not responsible for indirect damages or losses. For physical or data damages caused by technical errors attributable to Mess Meals, our maximum liability is limited to the value of affected orders within the app, as permitted by law.</p>
+      <h2>5. Content Ownership</h2>
+      <ul>
+        <li>
+          All design, features, and intellectual property belong to Mom’s Milk /
+          Parasya Technologies.
+        </li>
+        <li>You may not copy, reverse engineer, or reuse App materials.</li>
+      </ul>
 
-  <h2>8. Indemnification</h2>
-  <p>You agree to indemnify and hold harmless Mess Meals, its affiliates, and agents from any claims or issues arising from your breach of these terms or misuse of our services.</p>
+      <h2>6. User Responsibilities</h2>
+      <p>You agree <strong>NOT</strong> to:</p>
+      <ul>
+        <li>misuse the App or donor/requester features</li>
+        <li>provide false or harmful information</li>
+        <li>harass or abuse other users</li>
+        <li>attempt to hack or disrupt the App</li>
+        <li>misuse contact details shared between donors and recipients</li>
+      </ul>
 
-  <h2>9. Governing Law</h2>
-  <p>These terms are governed by the laws of Kerala, India. If a provision is found unenforceable, the remaining terms will remain in effect.</p>
+      <h2>7. Limitation of Liability</h2>
+      <ul>
+        <li>The App is provided “as is”, with no warranties.</li>
+        <li>We are not responsible for:</li>
+        <ul>
+          <li>inaccurate logs or user-generated data</li>
+          <li>downtime or technical issues</li>
+          <li>loss of data</li>
+          <li>issues between donors and recipients</li>
+          <li>decisions based on app insights</li>
+        </ul>
+      </ul>
 
-  <h2>10. Changes to Terms</h2>
-  <p>We may update these terms at any time. Significant changes will be announced in advance within the app. Continuing to use Mess Meals means acceptance of the updated terms.</p>
+      <p>Users are responsible for their actions and decisions.</p>
 
-  <h2>11. Contact Us</h2>
-  <p>If you have questions about these Terms, contact us at:</p>
-  <p><strong>Email:</strong> <a href="mailto:info@messmeals.com">info@messmeals.com</a></p>
-</section>
+      <h2>8. Modifications</h2>
+      <p>
+        We may update these Terms at any time. Continued use means acceptance of
+        the updated Terms.
+      </p>
 
-  )
+      <h2>9. Termination</h2>
+      <p>
+        We may suspend or terminate accounts for violations. You may stop using
+        the App at any time.
+      </p>
+
+      <h2>10. Governing Law</h2>
+      <p>
+        These Terms are governed by the laws of India unless local laws apply.
+      </p>
+
+      <h2>11. Contact Information</h2>
+      <ul>
+        <li>Parasya Technologies (OPC) Pvt Ltd</li>
+        <li>Email: <a href="mailto:support@parasya.in">support@parasya.in</a></li>
+        <li>Phone: <span>+91 98957 28129</span> </li>
+      </ul>
+    </section>
+  );
 }
-

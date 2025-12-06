@@ -1,12 +1,100 @@
-import React from 'react'
+"use client";
+
+
+import React, {useState}from 'react'
 import { LuMail } from "react-icons/lu";
 import { MdChatBubbleOutline } from "react-icons/md";
 import { FaPaperPlane } from "react-icons/fa";
 import './Contact.css'
 
 export default function Contact() {
+  const[name,setName]=useState("");
+  const[email,setEmail]=useState("");
+  const[message,setMessage]=useState("");
+
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertType, setAlertType] = useState("success");
+  const [loading, setLoading] = useState(false);
+  const [emailError, setEmailError] = useState("");
+
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+
+  const handleSubmit =async (e)=> {
+    e.preventDefault();
+  
+    const API_URL="https://api.momsmilk.app/contact-form";
+      setEmailError("");
+      if (!validateEmail(email)) {
+        setEmailError("Please enter a valid email address");
+        return;
+     }
+
+      setLoading(true);
+      setAlertType("loading");
+      setAlertMessage("Sending...");
+      setShowAlert(true);
+  try{
+    const response = await fetch(API_URL,{
+      method: 'POST',
+      headers:{
+        "Content-type":"application/json"
+      },
+      body:JSON.stringify({
+          Name:name,
+          email:email,
+          message:message,
+        }),
+    });
+    if (response.ok){
+      setAlertType("success");
+      setAlertMessage("Message sent successfully");
+      setShowAlert(true);
+        setName("");
+        setEmail("");
+        setMessage("");
+
+        setTimeout(() => setShowAlert(false),1200 );
+    }
+    else{
+      setAlertType("error");
+      setAlertMessage("Something went wrong");
+      setShowAlert(true);
+      setTimeout(() => setShowAlert(false),1200 );
+
+    }
+  }
+  catch(error){
+    setAlertType("error");
+    console.error("Error",error);
+    setAlertMessage("Error sending message");
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false),1200 );
+  }
+  };
   return (
     <div className='Contact-main' id='contact'>
+    {showAlert && (
+        <div className="alertOverlay">
+          <div className={`alertBox ${alertType}`}>
+            <div className="alertContent">
+              {alertType==="loading" ?(
+                <span className="loader"></span>
+              ) : alertType === "success" ? (
+                <span className="alertIcon successIcon">✔</span>
+              ) : (
+                <span className="alertIcon errorIcon">✖</span>
+              )}
+              <p className="alertText">{alertMessage}</p>
+            </div>
+          </div>
+        </div>
+      )}
         <div className="contact-left">
             <div className="contact-title">
                 Get in Touch <br /><span>We're Here to Help</span>
@@ -18,7 +106,7 @@ export default function Contact() {
                 <LuMail className='contact-icon1'/>
                 <div>
                     <div className="contact-typetitle">Email Us</div>
-                    <div className="contact-typedetail">support@momsmilk.app</div>
+                    <a href="mailto:support@momsmilk.app"  rel="noopener noreferrer">support@momsmilk.app</a>
                 </div>
             </div>
             <div className="contact-list">
@@ -43,13 +131,33 @@ export default function Contact() {
         <div className="contact-left">
                 <div className="form-container">
                     <p>Send us a message</p>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label> Name</label>
-                    <input placeholder='Your name' type="text" />
+                    <input 
+                        placeholder='Your name' 
+                        type="text" 
+                        value={name} 
+                        onChange={(e) => setName(e.target.value)}
+                        required
+                    />
                     <label> Email</label>
-                    <input placeholder='your.email@exapmle.com' type="email" />
+                    <input 
+                        placeholder='your.email@exapmle.com' 
+                        type="email"
+                        value={email}
+                        onChange={(e) => {setEmail(e.target.value); setEmailError("");}}
+                        required
+                    />
+                    {emailError && <p className="input-error">{emailError}</p>}
                     <label> Message</label>
-                    <textarea placeholder='How can we help you?' type="text" rows={3}></textarea>
+                    <textarea 
+                        placeholder='How can we help you?' 
+                        type="text" 
+                        rows={3}
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        required 
+                    />
                     <button type='submit'><FaPaperPlane/> Send Message</button>
                 </form>
                 </div>

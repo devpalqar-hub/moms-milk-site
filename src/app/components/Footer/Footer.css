@@ -68,8 +68,27 @@ footer ul{
     cursor: pointer;
     color: #FF9B85;
 }
+.updates-popup {
+  position: fixed;
+  top: 25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  opacity: 0;
+  animation: fadeInOut 1.75s ease forwards;
+  z-index: 9999;
+}
 
-
+@keyframes fadeInOut {
+  0% { opacity: 0; transform:translateX(-50%) translateY(-10px); }
+  20% { opacity: 1; transform:translateX(-50%) translateY(0); }
+  65% { opacity: 1; transform:translateX(-50%);}
+  100% { opacity: 0; transform:translateX(-50%) scale(1.1); }
+}
 
 @media (max-width:700px) {
     footer{
@@ -115,7 +134,15 @@ footer ul{
 .footer-bottom p{
     font-size: 11px;
     color: #737373;
-}    
+}   
+.updates-popup {
+    top: 12%;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    opacity: 0;
+    animation: fadeInOut 1.75s ease forwards;
+    z-index: 9999;
+} 
 }
 
 

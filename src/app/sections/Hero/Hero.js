@@ -17,13 +17,13 @@ export default function Hero() {
             Mom's Milk helps you track your baby's feeding, sleep, and diaper  routines and connect with trusted milk donors nearby.
         </div>
         <div className="download-badges">
-            <a href="">
+            <a href="https://apps.apple.com/us/app/momsmilk/id6751459414" target='_blank' rel='noopener noreferrer'>
                 <div className="download-bdg">
                     <BiLogoApple className='download-icon'/>
                     App Store
                 </div>
             </a>
-            <a href="">
+            <a href="https://play.google.com/store/apps/details?id=com.app.momsmilk" target='_blank' rel='noopener noreferrer'>
                 <div className="download-bdg">
                     <BiLogoPlayStore className='download-icon'/>
                     Google Play

@@ -1,20 +1,35 @@
+
+
 .terms-container {
   padding: 10px 2px;
   margin: 5 25;
   line-height: 1.75;
   font-size: 1.09rem;
-  color: #222937;
+  color: #1a1a1a;
+}
+
+.terms-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.terms-title .logo {
+  width: 200px;
+  object-fit: contain;
 }
 
 .terms-container h1 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 8px;
+  color: #000;
 }
 
 .terms-container .last-updated {
   font-size: 0.97rem;
-  color: #6891d3;
+  color: #6b6b6b;
   margin-bottom: 31px;
 }
 
@@ -22,12 +37,13 @@
   font-size: 1.18rem;
   margin-top: 22px;
   margin-bottom: 9px;
-  color: #2956a2;
+  color: #2e2e2e;
   font-weight: 600;
 }
 
 .terms-container p {
   margin-bottom: 13px;
+  color: #3b3b3b;
 }
 
 .terms-container ul {
@@ -38,7 +54,7 @@
 
 .terms-container ul li {
   margin-bottom: 8px;
-  color: #264965;
+  color: #4a4a4a;
   list-style-type: disc;
 }
 
@@ -47,23 +63,34 @@
   margin-top: 0.6em;
   margin-bottom: 0.4em;
   font-weight: 600;
-  color: #21407b;
+  color: #1f1f1f;
 }
 
 .terms-container a {
-  color: #136dc1;
-  text-decoration: underline;
+  color: #333;
+  text-decoration: none;
 }
+.terms-container a:hover {
+  color: #222;
+  text-decoration: none;
+}
+
 
 @media (max-width: 650px) {
   .terms-container {
     font-size: 1rem;
     padding: 13px 5px;
   }
+
   .terms-container h1 {
     font-size: 1.32rem;
   }
+
   .terms-container h2 {
     font-size: 1.09rem;
+  }
+
+  .terms-title .logo {
+    width: 125px;
   }
 }
