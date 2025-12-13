@@ -6,6 +6,7 @@ import './Hero.css'
 export default function Hero() {
   return (
     <div className='hero-main' id='hero'>
+        <h1 className="sr-only">Mom’s Milk</h1>
         <div className="hero-subhead">
             <LuSparkles className='hero-subhead-icon'/>
             TRUSTED BY 10,000+ MOTHERS
@@ -32,7 +33,7 @@ export default function Hero() {
         </div>
         <p>10k+ downloads</p>
         <div className="mobilemock-design">
-            <img src="./Mobilemock.png" alt="" />
+            <img src="/Mobilemock.png" alt="" />
             <div className="livecard">
                 <div className="liveicon"></div>
                 <div className="livetext">
