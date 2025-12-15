@@ -40,12 +40,12 @@ export default function Analytics() {
               </div>
           </div>
           <div className="analytics-right">
-            <img src="./Analyticmobilemock.png" alt="" />
+            <img src="/heromockimage.png" alt="" />
           </div>
       </div>
       <div className="timeline-section">
         <div className="timeline-left">
-          <img src="./Analyticmobilemock.png" alt="" />
+          <img src="/ss1.png" alt="" />
         </div>
         <div className="timeline-right">
               <div className="analytics-subhead">

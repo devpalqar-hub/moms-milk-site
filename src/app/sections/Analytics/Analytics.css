@@ -7,23 +7,23 @@
 .analytics-section{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 300px;
 }
 .analytics-right img{
     border-radius: 20px;
-    height: 600px;
+    height: auto;
     width: 275px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.1);
 }
 .timeline-left img{
     border-radius: 20px;
-    height: 600px;
-    width: 275px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    height: auto;
+    width: 290px;
 }
 .timeline-section{
     display: flex;
     justify-content:space-between;
+    align-items: center;
     gap: 300px;
 }
 .analytics-subhead{
@@ -167,7 +167,7 @@
     gap: 30px;
 }
 .analytics-right img{
-    height: 300px;
+    height: auto;
     width: 150px;
 }
 .timeline-left img{
@@ -275,7 +275,7 @@
 }
 
 .analytics-right img {
-  height: 450px;
+  height: auto;
   width: 220px;
 }
 .timeline-left img{

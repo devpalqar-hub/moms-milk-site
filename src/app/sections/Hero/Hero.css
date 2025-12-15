@@ -70,8 +70,9 @@
     color: #373737;
 }
 .hero-main img{
-    width: 480px;
-    height: 800px;
+    margin: 20px;
+    width: 340px;
+    height: auto;
 }
 .mobilemock-design{
     position: relative;
@@ -98,35 +99,14 @@
     font-weight: 600;
     color: #171717;
 }
-.livecard{
+.floatimg img{
+    width: 150px;
+    height: auto;
     position: absolute;
-    top: 28%;
-    left: 7%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 13px 12px;
-    background: #FFFFFFF2;
-    border-radius: 16px;
-    border: 1px solid #E5E5E5;
-    box-shadow: 0 8px 10px  #0000001A,0 20px 25px  #0000001A;
+    bottom: 8%;
+    left: -39.4%;
     animation: float 4s infinite ease-in-out;
-}
-.savecard{
-    position: absolute;
-    bottom: 40%;
-    right: 7%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 13px 12px;
-    background: #FFFFFFF2;
-    border-radius: 16px;
-    border: 1px solid #E5E5E5;
-    box-shadow: 0 8px 10px  #0000001A,0 20px 25px  #0000001A;
-    animation: float 4s infinite ease-in-out;
+
 }
 .sr-only {
   position: absolute;
@@ -202,8 +182,8 @@
     font-size: 14px;
 }
 .hero-main img{
-    width: 220px;
-    height: 360px;
+    width: 180px;
+    height: auto;
 }
 .mobilemock-design{
     position: relative;
@@ -228,6 +208,15 @@
     gap: 8px;
     padding: 10px 10px;
 }
+.floatimg img{
+    width: 75px;
+    height: auto;
+    position: absolute;
+    bottom: 8%;
+    left: -34.2%;
+    animation: float 4s infinite ease-in-out;
+
+}
 }
 
 
@@ -251,8 +240,8 @@
     font-size: 14px;
 }
 .hero-main img{
-    width: 360px;
-    height: 620px;
+    width: 250px;
+    height: auto;
 }
 .livecard{
     top: 26%;
@@ -271,5 +260,14 @@
 }
 .livetext p{
     font-size: 9px;
+}
+.floatimg img{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    left: -34.4%;
+    animation: float 4s infinite ease-in-out;
+
 }
 }

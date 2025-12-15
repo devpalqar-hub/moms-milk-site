@@ -33,19 +33,9 @@ export default function Hero() {
         </div>
         <p>10k+ downloads</p>
         <div className="mobilemock-design">
-            <img src="/Mobilemock.png" alt="" />
-            <div className="livecard">
-                <div className="liveicon"></div>
-                <div className="livetext">
-                    <p>LIVE</p>
-                    <h6>24/7</h6>
-                </div>
-            </div>
-            <div className="savecard">
-                <div className="livetext">
-                    <p>SAVED</p>
-                    <h6>2h/day</h6>
-                </div>
+            <img src="/heromockimage.png" alt="" />
+            <div className="floatimg">
+                <img src="/heromockfloat.png" alt="" />
             </div>
         </div>
     </div>
