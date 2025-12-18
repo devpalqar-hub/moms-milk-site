@@ -1,18 +1,23 @@
+"use client";
+
 import React from 'react'
 import { GrLocation } from "react-icons/gr";
 import { LuShield } from "react-icons/lu";
 import { AiOutlineTeam } from "react-icons/ai";
 import './MilkDonation.css'
 import MilkDonationCounter from './MilkDonationCounter';
+import useViewAnimation from "../../../hooks/useviewAnimation";
 
 export default function MilkDonation() {
+    const [topRef, topVisible] = useViewAnimation();
+    const [bottomRef, bottomVisible] = useViewAnimation();
   return (
-    <div className='Donation-main' id='milkdonation'>
-        <div className="donation-top">
+    <div className={"Donation-main"} id='milkdonation'>
+        <div ref={topRef} className={`donation-top ${topVisible ? "show" : ""}`}>
             <div className="donation-img">
             <img src="./Mother.png" alt="" />
             <div className="donation-badge">
-                <p><MilkDonationCounter target={1000} duration={1500} /> <br />Donations</p>
+                <p><MilkDonationCounter target={1000} duration={1500} start={topVisible} /> <br />Donations</p>
             </div>
         </div>
         <div className="donation-right">
@@ -45,11 +50,11 @@ export default function MilkDonation() {
             </div>
         </div>
         </div>
-        <div className="donation-bottom">
+        <div ref={bottomRef} className={`donation-bottom ${bottomVisible ? "show" : ""}`}>
             <div className="donation-bottomtitle">
                 How Milk Donation Works
             </div>
-            <div className="donation-bottomrow">
+            <div className="donation-bottomrow stagger">
                 <div className="donation-howbox">
                     <div className="numberingcircle1">1</div>
                     <div className="howtitle">Create Your Profile</div>

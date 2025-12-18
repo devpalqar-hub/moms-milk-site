@@ -1,17 +1,22 @@
+"use client";
+
 import React from 'react'
 import { HiStar } from "react-icons/hi";
 import './Review.css'
+import useViewAnimation from "../../../hooks/useviewAnimation";
+
 
 export default function Review() {
+    const [ref, visible] = useViewAnimation();
   return (
-    <div className='Review-main' id='review'>
+    <div ref={ref} className={`Review-main ${visible ? "show" : ""}`} id='review'>
         <div className="reviewtitle">
             Loved by Mothers Everywhere
         </div>
         <div className="reviewdetail">
             Join thousands of happy parents who trust Mom's Milk for their baby care tracking.
         </div>
-        <div className="review-row">
+        <div className="review-row stagger">
             <div className="reviewbox">
                 <div className="reviewrating">
                      <HiStar/>

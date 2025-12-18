@@ -69,14 +69,6 @@
     font-weight: 400;
     color: #373737;
 }
-.hero-main img{
-    margin: 20px;
-    width: 340px;
-    height: auto;
-}
-.mobilemock-design{
-    position: relative;
-}
 .liveicon{
     width: 8px;
     height: 8px;
@@ -99,15 +91,6 @@
     font-weight: 600;
     color: #171717;
 }
-.floatimg img{
-    width: 150px;
-    height: auto;
-    position: absolute;
-    bottom: 8%;
-    left: -39.4%;
-    animation: float 4s infinite ease-in-out;
-
-}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -119,7 +102,35 @@
   white-space: nowrap;
   border: 0;
 }
+.mobilemock-design{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circleback{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(60deg,rgba(255, 255, 255, 1) 0%, rgba(255, 250, 247, 1) 23%, rgba(255, 245, 240, 1) 47%, rgba(255, 244, 239, 1) 73%, rgba(255, 239, 234, 1) 100%);    border-radius: 50%;
+    z-index: -1;
+}
+.mobilemock-design img{
+    margin-top: 60px;
+    width: 500px;
+    height: auto;
+    animation: float 5s infinite ease-in-out;
+}
 
+.hero-main{
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.hero-main.show{
+  opacity: 1;
+  transform: translateY(0);
+}
 
 @keyframes liveGlow {
   0%, 100% {
@@ -131,7 +142,7 @@
 }
 @keyframes float {
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(2px);
   }
   50% {
     transform: translateY(-8px);
@@ -181,13 +192,16 @@
 .hero-main p{
     font-size: 14px;
 }
-.hero-main img{
-    width: 180px;
+.mobilemock-design img{
+    margin-top: 25px;
+    width: 300px;
     height: auto;
 }
-.mobilemock-design{
-    position: relative;
+.circleback{
+    width: 260px;
+    height: 260px;
 }
+
 .liveicon{
     width: 7px;
     height: 7px;
@@ -208,15 +222,7 @@
     gap: 8px;
     padding: 10px 10px;
 }
-.floatimg img{
-    width: 75px;
-    height: auto;
-    position: absolute;
-    bottom: 8%;
-    left: -34.2%;
-    animation: float 4s infinite ease-in-out;
 
-}
 }
 
 
@@ -239,9 +245,14 @@
     height: 42px;
     font-size: 14px;
 }
-.hero-main img{
-    width: 250px;
+.mobilemock-design img{
+    margin-top: 60px;
+    width: 400px;
     height: auto;
+}
+.circleback{
+    width: 350px;
+    height: 350px;
 }
 .livecard{
     top: 26%;
@@ -261,13 +272,5 @@
 .livetext p{
     font-size: 9px;
 }
-.floatimg img{
-    width: 100px;
-    height: auto;
-    position: absolute;
-    bottom: 5%;
-    left: -34.4%;
-    animation: float 4s infinite ease-in-out;
 
-}
 }

@@ -1,11 +1,16 @@
+"use client";
+
 import React from 'react'
 import { BiLogoPlayStore,BiLogoApple  } from "react-icons/bi";
 import { LuSparkles } from "react-icons/lu";
 import './Hero.css'
+import useViewAnimation from "../../../hooks/useviewAnimation";
 
 export default function Hero() {
+  const [ref, visible] = useViewAnimation();
+
   return (
-    <div className='hero-main' id='hero'>
+    <div ref={ref} className={`hero-main ${visible ? "show" : ""}`} id='hero'>
         <h1 className="sr-only">Mom’s Milk</h1>
         <div className="hero-subhead">
             <LuSparkles className='hero-subhead-icon'/>
@@ -33,10 +38,8 @@ export default function Hero() {
         </div>
         <p>10k+ downloads</p>
         <div className="mobilemock-design">
-            <img src="/heromockimage.png" alt="" />
-            <div className="floatimg">
-                <img src="/heromockfloat.png" alt="" />
-            </div>
+            <div className="circleback"></div>
+                <img src="/HeroMockup.png" alt=""/>
         </div>
     </div>
   )

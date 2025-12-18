@@ -1,39 +1,34 @@
-"use client"
-import React, { useEffect, useRef, useState } from "react";
+"use client";
 
-export default function MilkDonationCounter({ target = 1000, duration = 2000 }) {
+import { useEffect, useRef, useState } from "react";
+
+export default function MilkDonationCounter({
+  target = 1000,
+  duration = 2000,
+  start = false,
+}) {
   const [count, setCount] = useState(0);
-  const ref = useRef();
   const hasAnimated = useRef(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (!ref.current || hasAnimated.current) return;
-      const rect = ref.current.getBoundingClientRect();
+    if (!start || hasAnimated.current) return;
 
-      // Trigger when element enters viewport
-      if (rect.top < window.innerHeight && rect.bottom >= 0) {
-        hasAnimated.current = true;
+    hasAnimated.current = true;
 
-        let start = 0;
-        const increment = Math.ceil(target / (duration / 30));
+    let current = 0;
+    const increment = Math.ceil(target / (duration / 30));
 
-        const timer = setInterval(() => {
-          start += increment;
-          if (start >= target) {
-            start = target;
-            clearInterval(timer);
-          }
-          setCount(start);
-        }, 30);
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
       }
-    };
+      setCount(current);
+    }, 30);
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // check immediately in case element already in view
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [target, duration]);
+    return () => clearInterval(timer);
+  }, [start, target, duration]);
 
-  return <span ref={ref}>{count}+</span>;
+  return <span>{count}+</span>;
 }
-

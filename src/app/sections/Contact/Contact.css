@@ -165,7 +165,7 @@ form button:hover{
   top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,6 +227,15 @@ form button:hover{
   font-size: 12px;
   margin-top: 6px;
   margin-left: 5px;
+}
+.Contact-main {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.Contact-main.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes spin {

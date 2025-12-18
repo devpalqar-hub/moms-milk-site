@@ -22,3 +22,25 @@ a {
   text-decoration: none;
 }
 
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-main,
+  .feature-main,
+  .analytics-section,
+  .timeline-section,
+  .analytics-bottom,
+  .donation-top,
+  .donation-bottom,
+  .Review-main,
+  .Contact-main {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .stagger > * {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+

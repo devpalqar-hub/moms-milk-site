@@ -1,11 +1,19 @@
+"use client";
+
 import React from 'react'
 import { LuTrendingUp,LuClock4 ,LuSparkles,LuInfinity  } from "react-icons/lu";
 import './Analytics.css'
+import useViewAnimation from "../../../hooks/useviewAnimation";
+
 
 export default function Analytics() {
+  const [sectionRef, sectionVisible] = useViewAnimation();
+  const [timelineRef, timelineVisible] = useViewAnimation();
+  const [bottomRef, bottomVisible] = useViewAnimation();
+
   return (
-    <div className='analytics-main' id='analytics'>
-      <div className="analytics-section">
+    <div  className={"analytics-main"} id='analytics'>
+      <div ref={sectionRef} className={`analytics-section ${sectionVisible ? "show" : ""}`}>
           <div className="analytics-left">
               <div className="analytics-subhead">
                 <LuTrendingUp className='analytics-subhead-icon'/>
@@ -17,7 +25,8 @@ export default function Analytics() {
               <div className="anlytics-detail">
                 Beautiful visualizations reveal patterns you never knew existed.Make informed decisions backend by data.
               </div>
-              <div className="analytics-list">
+              <div className="analytics-list-wrapper stagger">
+                <div className="analytics-list">
                 <LuSparkles className='analytics-listicon'/>
                 <div>
                     <p className='analytics-listtitle'>Predictive Analytics</p>
@@ -38,14 +47,15 @@ export default function Analytics() {
                     <p className="analytics-listdetail">Share insights with pediatricians instantly</p>
                 </div>
               </div>
+            </div>
           </div>
           <div className="analytics-right">
-            <img src="/heromockimage.png" alt="" />
+            <img src="/analyticsimgone.png" alt="" />
           </div>
       </div>
-      <div className="timeline-section">
+      <div ref={timelineRef} className={`timeline-section ${timelineVisible ? "show" : ""}`}>
         <div className="timeline-left">
-          <img src="/ss1.png" alt="" />
+          <img src="/analyticsimgtwo.png" alt="" />
         </div>
         <div className="timeline-right">
               <div className="analytics-subhead">
@@ -58,7 +68,8 @@ export default function Analytics() {
               <div className="anlytics-detail">
                 Effortless logging with intelligent suggestions. Your baby's day, beautifully organized.
               </div>
-              <div className="timeline-container">                
+              <div className="timeline-list stagger">
+                <div className="timeline-container">                
                 <div>
                     <p className='timeline-containertitle'>One-Tap Logging</p>
                     <p className="timeline-containerdetail">Record activities in under 3 seconds</p>
@@ -79,10 +90,11 @@ export default function Analytics() {
                 </div>
                 <LuInfinity className='timeline-containericon'/>
               </div>
+              </div>
           </div>
       </div>
-      <div className="analytics-bottom">
-        <div className="analytics-bottomrow">
+      <div ref={bottomRef} className={`analytics-bottom ${bottomVisible ? "show" : ""}`}>
+        <div className="analytics-bottomrow stagger">
           <div className="analytics-bottombox">
             <p className='analytics-bottomicon'>📱</p>
             <p className='analytics-bottomtitle'>Mobile First</p>

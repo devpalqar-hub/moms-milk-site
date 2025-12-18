@@ -84,6 +84,31 @@
     font-weight: 400;
     color: #737373;
 }
+
+.Review-main{
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.Review-main.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+.Review-main .stagger > * {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.Review-main.show .stagger > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.Review-main.show .stagger > *:nth-child(1) { transition-delay: .1s }
+.Review-main.show .stagger > *:nth-child(2) { transition-delay: .2s }
+.Review-main.show .stagger > *:nth-child(3) { transition-delay: .3s }
+
 @media (max-width:700px) {
     
 

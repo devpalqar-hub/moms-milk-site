@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import './Features.css'
 import { LuBaby ,LuMoon,LuChartColumn ,LuHeart, LuShield  } from "react-icons/lu";
@@ -5,9 +7,13 @@ import { PiPulseBold } from "react-icons/pi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { RxLightningBolt } from "react-icons/rx";
 import { MdOutlineFeaturedPlayList } from "react-icons/md";
+import useViewAnimation from "../../../hooks/useviewAnimation";
+
+
 export default function Features() {
+  const [ref, visible] = useViewAnimation();
   return (
-    <div className='feature-main' id='features'>
+    <div ref={ref} className={`feature-main ${visible ? "show" : ""}`} id='features'>
       <div className="feature-subhead">
         <MdOutlineFeaturedPlayList className='feature-subhead-icon'/>
         FEATURES
@@ -18,7 +24,7 @@ export default function Features() {
         <div className="feature-detail">
             Comprehensive tools designed for the modern parent
         </div>
-        <div className="featurecard-gridA">
+        <div className="featurecard-gridA stagger">
             <div className="featurecard">
               <LuBaby className='baby-icon'/>
                 <div className="featurecard-title">
@@ -62,7 +68,7 @@ export default function Features() {
                 <p>Location-based donar matching with secure verification</p>
             </div>
         </div>
-        <div className="featurecard-gridB">
+        <div className="featurecard-gridB stagger">
           <div className="fcard">
             <RxLightningBolt className='fcard-icon'/>
             <div className="fcard-title">

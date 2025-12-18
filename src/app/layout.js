@@ -1,14 +1,28 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Mom's Milk",
-  description: "Mom's Milk helps you track your baby's feeding, sleep, and diaper  routines and connect with trusted milk donors nearby.",
-  applicationName: "Mom's Milk",
+  title: "Mom’s Milk – Baby Feeding, Sleep & Breast Milk Donation App",
+  description:
+    "Mom’s Milk is an all-in-one baby tracker app for new moms. Track breastfeeding, pumping, sleep, diapers and safely connect with local breast milk donors.",
+  applicationName: "Mom’s Milk",
+  keywords: [
+    "baby tracker app",
+    "breastfeeding tracker",
+    "baby sleep tracker",
+    "diaper tracker",
+    "breast milk donation",
+    "new mom app",
+    "postpartum support"
+  ],
+  alternates: {
+    canonical: "https://momsmilk.app"
+  },
   icons: {
     icon: "/searchlogo.png",
     apple: "/searchlogo.png",
-  },
+  }
 };
+
 
 export default function RootLayout({ children }) {
   return (

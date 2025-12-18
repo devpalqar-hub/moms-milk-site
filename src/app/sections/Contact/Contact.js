@@ -1,13 +1,16 @@
 "use client";
 
-
 import React, {useState}from 'react'
 import { LuMail } from "react-icons/lu";
 import { MdChatBubbleOutline } from "react-icons/md";
 import { FaPaperPlane } from "react-icons/fa";
 import './Contact.css'
+import useViewAnimation from "../../../hooks/useviewAnimation";
+
 
 export default function Contact() {
+  const [ref, visible] = useViewAnimation();
+
   const[name,setName]=useState("");
   const[email,setEmail]=useState("");
   const[message,setMessage]=useState("");
@@ -78,7 +81,7 @@ export default function Contact() {
   }
   };
   return (
-    <div className='Contact-main' id='contact'>
+    <div ref={ref} className={`Contact-main ${visible ? "show" : ""}`} id='contact'>
     {showAlert && (
         <div className="alertOverlay">
           <div className={`alertBox ${alertType}`}>
