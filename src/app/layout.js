@@ -1,4 +1,6 @@
 import "./globals.css";
+import Script from "next/script";
+import GAListener from "./components/GAListener";
 
 export const metadata = {
   title: "Mom’s Milk – Baby Feeding, Sleep & Breast Milk Donation App",
@@ -45,10 +47,23 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XEDZEVL353"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XEDZEVL353');
+          `}
+        </Script>
 
 
       </head>
       <body>
+        <GAListener />
         {children}
       </body>
     </html>
